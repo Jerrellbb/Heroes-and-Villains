@@ -26,66 +26,69 @@ export default function Battle() {
 
   return (
     <>
-      <div className="battlecards">
-        <Container fluid className='hero-single' style={cardColour(alignment)} >
-          <Row>
-            <Col md={6}></Col>
-          </Row>
-          <Row>
-
-            <Col md={12} className="cardname"><h2 className='text-center bold mt-4 mb-4'>#{id} {name}</h2></Col>
-            <Col md={12}><div className="card-img" style={{ backgroundImage: `url(${md})` }}></div></Col>
-            <div className="stats">
-              <Row>
-                <Col md={8}>
-                  <p>Identity: {alias} </p>
-                  <p>Occupation: {occupation && occupation !== "-" ? occupation : "Unknown"} </p>
-                  <p>Race: {race ? race : "Unknown"}</p>
-                  <p>Height: {height[0] && height[0] !== "-" ? height[0] : "Unknown"}</p>
-                  <p>Weight: {weight[0] && weight[0] !== "- lb" ? weight[0] : "Unknown"}</p>
-                  <p>Alignment: {alignment && alignment !== "-" ? alignment : "Neutral"}</p>
-                </Col>
-                <Col md={4} className="singlestat">
-                  <p>INT: {intelligence}</p>
-                  <p>STR: {strength}</p>
-                  <p>SPD: {speed}</p>
-                  <p>DUR: {durability}</p>
-                  <p>PWR: {power}</p>
-                  <p>CMBT: {combat}</p>
-                </Col>
-              </Row>
-            </div>
-          </Row>
-        </Container>
-      </div>
-      <div className="battlecards">
-        <Container fluid className='hero-single' style={cardColour(alignment)} >
-          <Row>
-            <Col md={12} className="cardname"><h2 className='text-center bold mt-4 mb-4'>#{id} {name}</h2></Col>
-            <Col md={12}><div className="card-img" style={{ backgroundImage: `url(${md})` }}></div></Col>
-            <div className="stats">
-              <Row>
-                <Col md={8}>
-                  <p>Identity: {alias} </p>
-                  <p>Occupation: {occupation && occupation !== "-" ? occupation : "Unknown"} </p>
-                  <p>Race: {race ? race : "Unknown"}</p>
-                  <p>Height: {height[0] && height[0] !== "-" ? height[0] : "Unknown"}</p>
-                  <p>Weight: {weight[0] && weight[0] !== "- lb" ? weight[0] : "Unknown"}</p>
-                  <p>Alignment: {alignment && alignment !== "-" ? alignment : "Neutral"}</p>
-                </Col>
-                <Col md={4} className="singlestat">
-                  <p>INT: {intelligence}</p>
-                  <p>STR: {strength}</p>
-                  <p>SPD: {speed}</p>
-                  <p>DUR: {durability}</p>
-                  <p>PWR: {power}</p>
-                  <p>CMBT: {combat}</p>
-                </Col>
-              </Row>
-            </div>
-          </Row>
-        </Container>
-      </div>
-    </>
-  )
+    <div className="battlecards-container">
+      <Row>
+        <Col md={6} className="hero-column">
+          <Container fluid className='hero-single' style={cardColour(alignment)}>
+            <Row>
+              <Col md={6}></Col>
+            </Row>
+            <Row>
+              <Col md={12} className="cardname"><h2 className='text-center bold mt-4 mb-4'>#{id} {name}</h2></Col>
+              <Col md={12}><div className="card-img" style={{ backgroundImage: `url(${md})` }}></div></Col>
+              <div className="stats">
+                <Row>
+                  <Col md={8}>
+                    <p>Identity: {alias} </p>
+                    <p>Occupation: {occupation && occupation !== "-" ? occupation : "Unknown"} </p>
+                    <p>Race: {race ? race : "Unknown"}</p>
+                    <p>Height: {height[0] && height[0] !== "-" ? height[0] : "Unknown"}</p>
+                    <p>Weight: {weight[0] && weight[0] !== "- lb" ? weight[0] : "Unknown"}</p>
+                    <p>Alignment: {alignment && alignment !== "-" ? alignment : "Neutral"}</p>
+                  </Col>
+                  <Col md={4} className="singlestat">
+                    <p>INT: {intelligence}</p>
+                    <p>STR: {strength}</p>
+                    <p>SPD: {speed}</p>
+                    <p>DUR: {durability}</p>
+                    <p>PWR: {power}</p>
+                    <p>CMBT: {combat}</p>
+                  </Col>
+                </Row>
+              </div>
+            </Row>
+          </Container>
+        </Col>
+        <Col md={6} className="hero-column">
+          <Container fluid className='hero-single' style={cardColour(alignment)}>
+            <Row>
+              <Col md={12} className="cardname"><h2 className='text-center bold mt-4 mb-4'>#{id} {name}</h2></Col>
+              <Col md={12}><div className="card-img" style={{ backgroundImage: `url(${md})` }}></div></Col>
+              <div className="stats">
+                <Row>
+                  <Col md={8}>
+                    <p>Identity: {alias} </p>
+                    <p>Occupation: {occupation && occupation !== "-" ? occupation : "Unknown"} </p>
+                    <p>Race: {race ? race : "Unknown"}</p>
+                    <p>Height: {height[0] && height[0] !== "-" ? height[0] : "Unknown"}</p>
+                    <p>Weight: {weight[0] && weight[0] !== "- lb" ? weight[0] : "Unknown"}</p>
+                    <p>Alignment: {alignment && alignment !== "-" ? alignment : "Neutral"}</p>
+                  </Col>
+                  <Col md={4} className="singlestat">
+                    <p>INT: {intelligence}</p>
+                    <p>STR: {strength}</p>
+                    <p>SPD: {speed}</p>
+                    <p>DUR: {durability}</p>
+                    <p>PWR: {power}</p>
+                    <p>CMBT: {combat}</p>
+                  </Col>
+                </Row>
+              </div>
+            </Row>
+          </Container>
+        </Col>
+      </Row>
+    </div>
+  </>
+)
 }

@@ -254,6 +254,8 @@ button:focus-visible {
 .modal-header {
 
   flex-grow: 1;
+  height: 100%;
+  width: 100%;
 
   button {
     position: absolute;
@@ -302,4 +304,6 @@ button:focus-visible {
 
 .battlecards{
   width: 50vw;
+  display: flex;
+  flex-grow: 1;
 }
