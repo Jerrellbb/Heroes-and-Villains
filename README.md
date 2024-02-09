@@ -1,10 +1,10 @@
-# SuperHero Search ReadMe
+# Heroes and Villains ReadMe
 
 ## Overview and Concept
 
-This project is an app called SuperHero Search, utilizing an API to retrieve information on 731 heroes and villains. Developed over two days in collaboration, the project involved writing code together while overcoming challenges and brainstorming solutions.
+This project is an app called Heroes and Villains, utilizing an API to retrieve information on 731 heroes and villains. Developed over two days in collaboration, the project involved writing code together while overcoming challenges and brainstorming solutions.
 
-Site’s link: [SuperHero Search](https://superherosearch.netlify.app/)
+Site’s link: [Heroes and Villains](https://superherosearch.netlify.app/)
 
 ## Technologies Used:
 
